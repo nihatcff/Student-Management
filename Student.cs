@@ -21,12 +21,12 @@ public class Student
 
     public void ShowInfo() //Melumatlari gosteren method
     {
-        Console.WriteLine($"Ad: {Name}, Soyad: {Surname}, Ortalama: {GetAverage(Grades)}");
+        Console.WriteLine($"Ad: {Name}, Soyad: {Surname}, Ortalama: {GetAverage(Grades):0.00}");
     }
     public double GetAverage(int[] grades) //Umumi qiymet ortalamasi ucun method
     {
-        int sum = default;
-        foreach (int grade in grades)
+        double sum = default;
+        foreach (double grade in grades)
         {
             sum += grade;
         }
